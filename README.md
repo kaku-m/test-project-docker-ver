@@ -149,6 +149,6 @@ https://docs.docker.jp/compose/reference/toc.html
 ```
 
 ## 参考
-以下参照
-https://github.com/kaku-m/test-project/blob/master/README.md#%E5%8F%82%E8%80%83
-※HTTPS通信の設定は行っていません
+以下参照  
+https://github.com/kaku-m/test-project/blob/master/README.md#%E5%8F%82%E8%80%83  
+※HTTPS通信の設定は行っていません  
