@@ -1,7 +1,6 @@
 # test-project-docker-ver
 
 ## ローカル開発環境構築例（Windows）
-※docker-composeがインストール済みであれば、インストールと動作確認から進めてください  
 
 ### 事前準備
 VirtualBoxのインストール  
@@ -41,7 +40,7 @@ PuTTY Security Alert「はい」
 
 ```
 
-### インストールと動作確認
+### 動作確認
 ```
 $ git clone https://github.com/kaku-m/test-project-docker-ver.git
 $ cd test-project-docker-ver
@@ -118,7 +117,7 @@ $ docker exec -it db-container bash
 移動　・・・親ページのIDを入力してページを移動する（子ページも全て）　※エラーチェック無し  
 削除　・・・子ページも全て削除する　※物理削除  
 
-### dockerコマンド
+### Dockerコマンド
 ```
 # コンテナの一覧
 $ docker-compose ps
