@@ -42,8 +42,8 @@ PuTTY Security Alert「はい」
 
 ### インストールと動作確認
 ```
-$ git clone https://github.com/kaku-m/test-project.git
-$ cd test-project
+$ git clone https://github.com/kaku-m/test-project-docker-ver.git
+$ cd test-project-docker-ver
 $ docker-compose up
 ```
 http://192.168.33.33:8000/ にアクセス  
