@@ -169,13 +169,9 @@ $ npm init nuxt-app test-project
 ```
 
 ### ホスト設定
-package.jsonのscripts.devを下記に変更  
-```
-NUXT_HOST=192.168.33.10 NUXT_PORT=3333 nuxt
-```
 nuxt.config.jsのaxiosに下記を追加  
 ```
-baseURL: 'https://192.168.33.10:3333/'
+baseURL: 'https://192.168.33.33:8000/'
 ```
 
 ### ログイン機能の為
