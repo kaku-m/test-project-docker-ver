@@ -149,6 +149,64 @@ https://docs.docker.jp/compose/reference/toc.html
 ```
 
 ## 参考
-以下参照  
-https://github.com/kaku-m/test-project/blob/master/README.md#%E5%8F%82%E8%80%83  
-※HTTPS通信の設定は行っていません  
+
+### create-nuxt-app
+```
+$ npm init nuxt-app test-project
+# Project name:「そのままEnter押下」
+# Programming language:「JavaScript」
+# Package manager:「Npm」
+# UI framework:「None」
+# Nuxt.js modules:「Axios」
+# Linting tools:「そのままEnter押下」
+# Testing framework:「None」
+# Rendering mode:「Universal（SSR / SSG）」
+# Deployment target:「Server（Node.js hosting）」
+# Development tools:「そのままEnter押下」
+# Development tools:「そのままEnter押下」
+# What is your GitHub username?「任意」
+# Version control system:「Git」
+```
+
+### ホスト設定
+package.jsonのscripts.devを下記に変更  
+```
+NUXT_HOST=192.168.33.10 NUXT_PORT=3333 nuxt
+```
+nuxt.config.jsのaxiosに下記を追加  
+```
+baseURL: 'https://192.168.33.10:3333/'
+```
+
+### ログイン機能の為
+```
+$ npm install --save @nuxtjs/auth
+# npm install --save jsonwebtoken
+```
+nuxt.config.jsのmodulesに下記を追加  
+```
+'@nuxtjs/auth',
+```
+storeフォルダにindex.jsを作成  
+
+### 画面デザインの為
+```
+$ npm install @nuxtjs/vuetify -D
+```
+nuxt.config.jsのbuildModulesに下記を追加  
+```
+'@nuxtjs/vuetify',
+```
+
+### APIの実装とDB接続の為
+```
+$ npm install --save express
+$ npm install --save mysql2
+$ npm install --save multer
+```
+staticフォルダにimagesフォルダを作成  
+
+### WYSIWYGエディタの導入
+```
+npm install --save "@tinymce/tinymce-vue@^3"
+```
