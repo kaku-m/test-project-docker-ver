@@ -1,6 +1,7 @@
 # test-project-docker-ver
 
 ## ローカル開発環境構築例（Windows）
+※docker-composeがインストール済みであれば、インストールと動作確認から進めてください  
 
 ### 事前準備
 VirtualBoxのインストール  
@@ -20,7 +21,7 @@ PowerShellまたはコマンドプロンプトを起動
 ```
 Vagrantfileの以下のコメントアウトを外す  
 ```
-# config.vm.network "private_network", ip: "192.168.33.33"  
+# config.vm.network "private_network", ip: "192.168.33.33"
 ```
 VMを起動  
 ```
@@ -117,7 +118,7 @@ $ docker exec -it db-container bash
 移動　・・・親ページのIDを入力してページを移動する（子ページも全て）　※エラーチェック無し  
 削除　・・・子ページも全て削除する　※物理削除  
 
-### Dockerコマンド
+### dockerコマンド
 ```
 # コンテナの一覧
 $ docker-compose ps
