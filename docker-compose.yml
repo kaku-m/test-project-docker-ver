@@ -1,0 +1,39 @@
+version: "3.8"
+
+services:
+  db:
+    image: mysql:8.0.25
+    container_name: db-container
+    env_file:
+      - ./mysql/db.env
+    environment:
+      - TZ=Asia/Tokyo
+    restart: always
+    volumes:
+      - ./mysql/conf:/etc/mysql/conf.d/:ro
+      - db-data:/var/lib/mysql
+    networks:
+      - default
+
+  front:
+    build: ./front
+    container_name: front-container
+    environment: 
+      - TZ=Asia/Tokyo
+    ports:
+      - "8000:3000"
+    volumes:
+      - ./front:/app
+      - /app/node_modules
+    working_dir: /app
+    command: sh -c "npm install && npm run dev"
+    networks:
+      - default
+    depends_on:
+      - db
+
+volumes:
+  db-data:
+
+networks:
+  default:
