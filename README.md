@@ -49,7 +49,7 @@ $ docker-compose up
 http://192.168.33.33:8000/ にアクセス  
 確認できたらターミナルでCtrl+Cを押下  
 
-### MySQLの設定
+### テーブルの作成
 ```
 $ docker-compose up -d
 $ docker exec -it db-container bash
