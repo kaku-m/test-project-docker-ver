@@ -43,7 +43,7 @@ $ sudo dnf install -y docker-ce docker-ce-cli containerd.io
 $ docker --version
 $ sudo systemctl start docker
 $ systemctl status docker
-参考）https://docs.docker.com/engine/install/centos/
+# 参考）https://docs.docker.com/engine/install/centos/
 
 # rootユーザー以外でDockerを管理する
 $ sudo groupadd docker
@@ -54,13 +54,13 @@ $ docker run hello-world
 # 起動時にDockerを起動する
 $ sudo systemctl enable docker.service
 $ sudo systemctl enable containerd.service
-参考）https://docs.docker.com/engine/install/linux-postinstall/
+# 参考）https://docs.docker.com/engine/install/linux-postinstall/
 
 # Docker Composeのインストール
 $ sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 $ sudo chmod +x /usr/local/bin/docker-compose
 $ docker-compose --version
-参考）https://docs.docker.com/compose/install/#install-compose-on-linux-systems
+# 参考）https://docs.docker.com/compose/install/#install-compose-on-linux-systems
 
 # gitのインストール
 $ sudo dnf install -y git
