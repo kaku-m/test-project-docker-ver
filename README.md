@@ -18,7 +18,7 @@ PowerShellまたはコマンドプロンプトを起動
 > vagrant init bento/centos-8.2
 > vim ./Vagrantfile
 ```
-Vagrantfileの以下のコメントアウトを外す  
+Vagrantfileの以下のコメントアウトを外してipを変更  
 ```
 # config.vm.network "private_network", ip: "192.168.33.33"
 ```
