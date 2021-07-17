@@ -45,7 +45,7 @@ $ sudo systemctl start docker
 $ systemctl status docker
 # 参考）https://docs.docker.com/engine/install/centos/
 
-# rootユーザー以外でDockerを管理する
+# rootユーザー以外でDockerコマンドを使用する
 $ sudo groupadd docker
 $ sudo usermod -aG docker $USER
 $ newgrp docker
